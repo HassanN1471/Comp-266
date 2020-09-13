@@ -1,0 +1,75 @@
+.main{
+	display:flex;
+	flex-direction: column;	
+	align-items:center;
+/* 	border:1px solid white; */
+}
+
+.commentBox{
+	padding:1%;
+	width:auto;
+	height:auto;
+	background-color:white;
+	color: black;
+	margin-bottom:10px;
+	text-align:left;
+	font-size:125%;
+	
+
+}
+
+.commentPanel{
+	margin-left: 2%;
+}
+
+.clear{
+	clear:both;
+}
+
+.form{
+	padding:10px;
+	border:1px solid #000;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:125%;
+}
+	
+.form input[type="text"], textarea{
+	max-width:300px;
+	width:300px;
+}
+
+.form input[type="button"]{
+	width:auto;
+	height:auto;
+}
+	
+select{
+	width:308px;
+}	
+	
+.star{
+  color: gold;
+  font-size: 200%;
+  padding: 15px;
+}
+.star::before{/*injecting this into the 'star' html code */
+  content: '\2606';/*unicode of outline of a star*/
+  cursor: pointer;
+}
+.star:hover::before{
+  content: '\2605';/*unicode of filled in star*/
+  color: goldenrod;
+}
+.star.rated::before{/*inject this when rated is added to 'star; using javascript */
+  content: '\2605';/*unicode of filled in star*/
+}
+	
+a.title{
+	font-weight:bold;
+}
+
+a.score{
+	font-weight:bold;
+	color:gold;
+}

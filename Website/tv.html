@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet_2.css" />
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit6.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit7.js" /></script>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">	
+		
+		<title>TV page</title>
+	</head>
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+
+			<a href="home.html">Home</a>
+
+			<a href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+
+			<a class="active" href="tv.html">TV</a>
+			
+			<a href="movies.html">Movies</a>
+
+			<a href="video_games.html">Video Games</a>
+			
+			<a href="review.html">Review/Comments</a>
+	
+			<a href="contact.html">Contact</a>
+
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		<div class="main">
+			<h1><span>Top 5 Batman TV Shows</span></h1>
+			<h4>Based on IMDb scores</h4>
+			
+			<!--ordered list-->
+			<ol>
+				<li>
+					<div class="b1">
+						<div><h2>Batman: The Animated Series</h2></div>
+						<div><img src="images/Batman_animated_series.jpg" alt="Poster of Batman animated series" class="responsive"></div>
+						<div><a href="https://www.imdb.com/title/tt0103359/mediaviewer/rm3096602624">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>90%</b></h3><div>
+						<div><p>Synopsis from IMDb: The Dark Knight battles crime in Gotham City with occasional help from Robin and Batgirl.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/mNVQqaHdne4" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>The New Batman Adventures</h2></div>
+						<div><img src="images/new_batman_adventures.jpg" alt="Poster of The New Batman Adventures" class="responsive"></div>
+						<div><a href="https://www.imdb.com/title/tt0118266/mediaviewer/rm2718964992">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>85%</b></h3><div>
+						<div><p>Synopsis from IMDb: The further and darker adventures of Batman with a new Robin, a closer association with Batgirl and the previous Robin now as Nightwing.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/B3T19qRRYOw" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>Batman Beyond</h2></div>
+						<div><img src="images/batman_beyond.jpg" alt="Poster of batman beyond" class="responsive"></div>
+						<div><a href="https://www.imdb.com/title/tt0147746/mediaviewer/rm939068672">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>81%</b></h3><div>
+						<div><p>Synopsis from IMDb: Fuelled by remorse and vengeance, a high schooler named Terry McGinnis revives the role of Batman. Under supervision of an elderly Bruce Wayne, he fights crime in a harsh, futuristic Gotham.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/bqhsoAGsOXE" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>			
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>Gotham</h2></div>
+						<div><img src="images/Gotham.jpg" alt="Poster of Gotham" class="responsive"></div>
+						<div><a href="https://www.gstatic.com/tv/thumb/tvbanners/16190252/p16190252_b_v8_aa.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>78%</b></h3><div>
+						<div><p>Synopsis from IMDb: The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/0d1zpt6k5OI" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>				
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>Batman: The Brave and the Bold</h2></div>
+						<div><img src="images/batman_brave_and_bold.jpg" alt="Poster of Batman: The Brave and the Bold" class="responsive"></div>
+						<div><a href="https://www.imdb.com/title/tt1213218/mediaviewer/rm220756736">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>84%</b></h3><div>
+						<div><p>Synopsis from IMDb: An updated animated series centering on the Caped Crusader himself as he partners and deals with his fellow superheroes in the DC Comics universe.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/XoKsfyH6Jcw" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>			
+				</li>
+			</ol> 
+			
+			<!-- HTML for top of page button-->
+			<button id="topButton"><i class="fas fa-chevron-up"></i></button>
+			
+			<!-- HTML for facebook share button-->
+			<iframe id = "shareBtn" src="" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<footer>
+				<!--footer section with auter name and last date modifed-->
+				<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>	
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>

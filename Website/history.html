@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css"/>
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit6.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit7.js" /></script>		
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		
+
+		<title>History page</title>
+	</head>
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+		
+			<a href="home.html">Home</a>
+
+			<a class="active" href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+
+			<a href="tv.html">TV</a>
+			
+			<a href="movies.html">Movies</a>
+
+			<a href="video_games.html">Video Games</a>
+			
+			<a href="review.html">Review/Comments</a>
+
+			<a href="contact.html">Contact</a>
+			
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		<div class="main">
+			<h1><span>Brief History of Batman</span></h1>
+			
+			<div class="container">
+				<div class="mb2">
+				<div><p>Batman is a superhero appearing in comics published by DC comics and was the creation of artist Bob Kane and writer Bill finger. Batman’s first design was widely different from what it is today, he sporting a red suit, with no cowl or iconic bat symbol on his chest.</p></div>
+				
+				<div><img src="images/original_batman_design.jpg" alt="image of original batman design" class="responsive"></div>
+				<div><a href="https://i.pinimg.com/564x/7d/47/87/7d47873c2090e1a983772044fab040a7.jpg">Image Source</a></div>
+				
+				<div><p>His design was ultimately change, which more closely resembles his modern designs, when he made his first appearance in 1939, Detective comics #27.</p></div>
+				
+				<div><img src="images/Detective_Comics_27_(May_1939).png" alt="cover of Detective Comics 27" class="responsive"></div>
+				<div><a href="https://upload.wikimedia.org/wikipedia/en/b/bc/Detective_Comics_27_%28May_1939%29.png">Image Source</a></div>
+				
+				<div><p>He became quite popular after his first appearance and gained his own comic title the following year called Batman. As the years went on, there were many different interpretations of the character. Notably the 1960s Batman television show, made Batman to be viewed as a campy. This perception of the character continued even years after the 1960s show had ended.</p></div>
+				
+				<div><img src="images/adam_west_batman.png" alt="picture of adam west batman" class="responsive"></div>
+				<div><a href="https://i.pinimg.com/originals/7b/74/4a/7b744ab6c0461ca7c24af1fbb1535f0f.png">Image Source</a></div>
+				
+				<div><p>Later on, numbers creators tried to return the Character back to his darker roots, this led to one of the best comic ever written about the character,  1986s The Dark Knight Returns written by Frank MIller.</p></div>
+				
+				<div><img src="images/Dark_knight_returns.jpg" alt="cover of BATMAN: THE DARK KNIGHT RETURNS" class="responsive"></div>
+				<div><a href="https://upload.wikimedia.org/wikipedia/en/7/77/Dark_knight_returns.jpg">Image Source</a></div>
+				
+				<div><p>With the success of live action films and various other media adaptations , Batman has become one of the most prominent mainstream characters in modern culture.</p></div>
+				
+				</div>
+			</div>
+			
+			<!-- HTML for top of page button-->
+			<button id="topButton"><i class="fas fa-chevron-up"></i></button>
+			
+			<!-- HTML for facebook share button-->
+			<iframe id = "shareBtn" src="" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<!--footer section with auter name and last date modifed-->
+			<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+			<footer>
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>	
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>

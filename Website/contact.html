@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+		
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		
+		<title>Contact page</title>
+	</head>
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+
+			<a href="home.html">Home</a>
+
+			<a href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+			
+			<a href="tv.html">TV</a>
+			
+			<a href="movies.html">Movies</a>
+			
+			<a href="video_games.html">Video Games</a>
+			
+			<a href="review.html">Review/Comments</a>
+
+			<a class="active" href="contact.html">Contact</a>
+			
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		<div class="main">
+			<h1><span>Contact</span></h1>
+			<!--table tag to organize contact information-->
+			<table>
+				<tr>
+					<th>Contact info</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td>Hassan Niazi</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>m4tchst1ck5@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Phone:</td>
+					<td>905 123 456</td>
+				</tr>
+			
+			</table>
+			
+			<h2>HTML Forms</h2>
+			<!--form that takes user inputed data and sends it to an email using the form action "mailto:" -->
+			<form action="mailto:m4tchst1ck5@gmail.com" method="Post">
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname" placeholder="First Name"><br>
+				
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+				
+				<label for="lname">Email:</label><br>
+				<input type="text" id="email" name="email" placeholder="Email"><br>
+				
+				<label for="lname">Comments:</label><br>
+				<textarea id="comments" placeholder="Comments"> </textarea><br><br>
+				
+				<input type="submit" value="Submit">
+			</form> 
+			
+			<footer>
+				<!--footer section with auter name and last date modifed-->
+				<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>	
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>

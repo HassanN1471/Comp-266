@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet_2.css" />
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit6.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit7.js" /></script>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">		
+		
+		<title>Movies page</title>
+		
+	</head>
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+
+			<a href="home.html">Home</a>
+
+			<a href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+			
+			<a href="tv.html">TV</a>
+			
+			<a class="active" href="movies.html">Movies</a>
+
+			<a href="video_games.html">Video Games</a>
+			
+			<a href="review.html">Review/Comments</a>
+
+			<a href="contact.html">Contact</a>
+
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		<div class="main">
+			<h1><span>Top 5 Batman Movies</span></h1>
+			<h4>Based on Rotten Tomatoes scores</h4>
+			
+			<!--ordered list-->
+			<ol>
+				<li>
+					<div class="b1">
+						<div><h2>The Dark Knight</h2></div>
+						<div><img src="images/Dark_Knight.jpg" alt="Poster of Dark Knight" class="responsive"></div>
+						<div><a href="https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>94%</b></h3><div>
+						<div><p>Synopsis from IMDb: When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p></div>
+						<div><iframe  src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>The Lego Batman Movie</h2></div>
+						<div><img src="images/The_Lego_Batman_Movie_PromotionalPoster.jpg" alt="Poster of Lego Batman Movie" class="responsive"></div>
+						<div><a href="https://upload.wikimedia.org/wikipedia/en/6/61/The_Lego_Batman_Movie_PromotionalPoster.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>90%</b></h3><div>
+						<div><p>Synopsis from IMDb: A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.</p></div>
+						<div><iframe src="https://www.youtube.com/embed/rGQUKzSDhrg" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>The Dark Knight Rises</h2></div>
+						<div><img src="images/Dark_knight_rises_poster.jpg" alt="Poster of Dark Knight Rises" class="responsive"></div>
+						<div><a href="https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>87%</b></h3><div>
+						<div><p>Synopsis from IMDb: Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.</p></div>
+						<div><iframe  src="https://www.youtube.com/embed/GokKUqLcvD8" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>			
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>Batman Begins</h2></div>
+						<div><img src="images/Batman_Begins_Poster.jpg" alt="Poster of Batman Begins" class="responsive"></div>
+						<div><a href="https://upload.wikimedia.org/wikipedia/en/a/af/Batman_Begins_Poster.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>84%</b></h3><div>
+						<div><p>Synopsis from IMDb: After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.</p></div>
+						<div><iframe  src="https://www.youtube.com/embed/neY2xVmOfUM" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>				
+				</li>
+				
+				<li>
+					<div class="b1">
+						<div><h2>Batman: Mask of the Phantasm</h2></div>
+						<div><img src="images/Batman_mask_of_the_phantasm_poster.jpg" alt="Poster of Batman mask of the phantasm" class="responsive"></div>
+						<div><a href="https://upload.wikimedia.org/wikipedia/en/e/ea/Batman_mask_of_the_phantasm_poster.jpg">Image Source</a></div>
+					</div>
+					<div class="b2">
+						<div><h3>Rating: <b>84%</b></h3><div>
+						<div><p>Synopsis from IMDb: Batman is wrongly implicated in a series of murders of mob bosses actually done by a new vigilante assassin.</p></div>
+						<div><iframe  src="https://www.youtube.com/embed/G__jUFD4Ef8" frameborder="0" allowfullscreen ng-show="showvideo" class="responsive"></iframe></div>
+					</div>			
+				</li>
+			</ol> 
+			
+			<!-- HTML for top of page button-->
+			<button id="topButton"><i class="fas fa-chevron-up"></i></button>
+			
+			<!-- HTML for facebook share button-->
+			<iframe id = "shareBtn" src="" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<footer>
+				<!--footer section with auter name and last date modifed-->
+				<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>	
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>

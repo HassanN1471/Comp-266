@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css"/>	
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet_4.css"/>
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+		
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit7.js" /></script>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<title>Home page</title>
+	</head>
+	
+
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+
+			<a class="active" href="home.html">Home</a>
+			
+			<a href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+
+			<a href="tv.html">TV</a>
+			
+			<a href="movies.html">Movies</a>
+			
+			<a href="video_games.html">Video Games</a>
+			
+			<a href="review.html">Review/Comments</a>
+			
+			<a href="contact.html">Contact</a>
+			
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		
+		<div class="main">
+			<div class="container">
+				<div class="mb1">
+					<!-- Slideshow container -->
+					<div class="slideshow-container">						
+						<!-- Full-width images with number and caption text -->
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Batman.jpg" alt="A picture of Batman" class="responsive"></div>
+							<div class="text"></div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://www.pinterest.ca/pin/725783296168023646/">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Detective_Comics_27_(May_1939).png" alt="cover of Detective Comics 27" class="responsive"></div>
+							<div class="text">Detective Comics #27</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://upload.wikimedia.org/wikipedia/en/b/bc/Detective_Comics_27_%28May_1939%29.png">Image Source</a></div>	
+						</div>		
+
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/long_halloween.jpg" alt="cover of long halloween" class="responsive"></div>
+							<div class="text">Batman: The Long Halloween</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/48364/48364._SX1280_QL80_TTD_.jpg">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Batman_animated_series.jpg" alt="Poster of Batman animated series" class="responsive"></div>
+							<div class="text">Batman: The Animated Series</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://www.imdb.com/title/tt0103359/mediaviewer/rm3096602624">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Gotham.jpg" alt="Poster of Gotham" class="responsive"></div>
+							<div class="text">Gotham</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://www.gstatic.com/tv/thumb/tvbanners/16190252/p16190252_b_v8_aa.jpg">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Dark_Knight.jpg" alt="Poster of Dark Knight" class="responsive"></div>
+							<div class="text">The Dark Knight</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/The_Lego_Batman_Movie_PromotionalPoster.jpg" alt="Poster of Lego Batman Movie" class="responsive"></div>
+							<div class="text">The Lego Batman Movie</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://upload.wikimedia.org/wikipedia/en/6/61/The_Lego_Batman_Movie_PromotionalPoster.jpg">Image Source</a></div>	
+						</div>
+						
+						<div class="Slides fade">						
+							<!--relative URL geting image from a sub-irectory calles images-->
+							<div><img src="images/Batman_Arkham_Asylum_Videogame_Cover.jpg" alt="cover of Batman Arkham Asylum" class="responsive"></div>
+							<div class="text">BATMAN: ARKHAM ASYLUM</div>
+							<!--absolute URl to the image source-->
+							<div><a href="https://upload.wikimedia.org/wikipedia/en/4/42/Batman_Arkham_Asylum_Videogame_Cover.jpg">Image Source</a></div>	
+						</div>							
+					
+					<!-- run function to show first slide -->
+					<script>
+						showSlides(1);
+					</script> 
+					
+					  <!-- Next and previous buttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					
+				</div>
+				
+				<div class="mb2">
+					<div><h4><span>Introduction</span></h4></div>
+				
+					<div><p>This site purpose is to provide information on the orgins and history of Batman and the top tv shows, movies and video games the features Batman as the main character.</p></div>
+				</div>
+			</div>
+			
+			<!-- HTML for facebook share button-->
+			<iframe id = "shareBtn" src="" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<!--footer section with auter name and last date modifed-->
+			<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+			<footer>
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>	
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!--sets the view point-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--external add CSS-->
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet_2.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet_5.css" />
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+		<!--external JavaScript-->
+		<script  type="text/javascript" src="JavaScript/jscript.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit5.js" /></script>
+		<script  type="text/javascript" src="JavaScript/jscript_unit6.js" /></script>	
+		<script  type="text/javascript" src="JavaScript/jscript_unit7.js" /></script>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		
+		<!--google hosted jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<title>Review/Comments page</title>
+	</head>
+	
+	<!--below is navigation bar at the top of the site which links all the pages-->
+	<body>
+		<div class="topnav" id="Topnav">
+			<a href="home.html">Home</a>
+			
+			<a href="history.html">History</a>
+
+			<a href="comics.html">Comics</a>
+
+			<a href="tv.html">TV</a>
+			
+			<a href="movies.html">Movies</a>
+
+			<a href="video_games.html">Video Games</a>
+			
+			<a class="active" href="review.html">Review/Comments</a>
+
+			<a href="contact.html">Contact</a>
+			
+			<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+			
+		</div>
+		<div class="main">
+			<h1><span>Review and Comment</span></h1>
+			 <h4>Share your reviews of Batman titles listed on this site and any comments with other visiters.</h4>
+			 
+			<!--input field for comments/reviews-->
+			<div class="form">
+				<div>
+					<p>Name:</p>
+					<input type="text" id="name"/>
+				</div>
+				
+				<!---->
+				<div>
+					<p>Title:</p>
+					<select id="selectTitle">
+						<option value="" selected disabled hidden></option>
+						<option value="0">BATMAN: THE DARK KNIGHT RETURNS</option>
+						<option value="1">Batman: Year One</option>
+						<option value="2">Batman: The Killing Joke</option>
+						<option value="3">Batman: The Long Halloween</option>
+						<option value="4">Arkham Asylum: A Serious House on Serious Earth</option>
+						<option value="5">Batman: The Animated Series</option>
+						<option value="6">The New Batman Adventures</option>
+						<option value="7">Batman Beyond</option>
+						<option value="8">Gotham</option>
+						<option value="9">Batman: The Brave and the Bold</option>
+						<option value="10">The Dark Knight</option>
+						<option value="11">The Lego Batman Movie</option>
+						<option value="12">The Dark Knight Rises</option>
+						<option value="13">Batman Begins</option>
+						<option value="14">Batman: Mask of the Phantasm</option>
+						<option value="15">BATMAN: ARKHAM CITY</option>
+						<option value="16">BATMAN: ARKHAM ASYLUM</option>
+						<option value="17">BATMAN: ARKHAM KNIGHT</option>
+						<option value="18">LEGO BATMAN 2: DC SUPER HEROESr</option>
+						<option value="19">LEGO BATMAN: THE VIDEOGAME</option>
+					</select>
+				</div>
+				
+				<div>
+					<p>Rating:<p>
+						<div class="stars" id="starRating" data-rating="3">
+							<span class="star">&nbsp;</span>
+							<span class="star">&nbsp;</span>
+							<span class="star">&nbsp;</span>
+							<span class="star">&nbsp;</span>
+							<span class="star">&nbsp;</span>
+						</div>
+				</div>				
+				
+				<div>
+					<p>Comment:<p>
+					<textarea rows="5" col="30" id="bodyText"></textarea>
+				</div>				
+			
+				<input type="button" id="addComment" value="Submit"/>
+			
+			</div><br/><br/>	
+		
+			<!--comments/reviews will be added in here using javascript-->
+			<div id="container"></div>				
+			
+			<!-- HTML for top of page button-->
+			<button id="topButton"><i class="fas fa-chevron-up"></i></button>
+			
+			<!-- HTML for facebook share button-->
+			<iframe id = "shareBtn" src="" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			
+			<!--footer section with auter name and last date modifed-->
+			<!--code found here: https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_lastmodified-->
+			<footer>
+				<p>Created by Hassan Niazi | Last modified <a id="demo"></a>.</p>
+				<script>
+					document.getElementById("demo").innerHTML = document.lastModified;
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>

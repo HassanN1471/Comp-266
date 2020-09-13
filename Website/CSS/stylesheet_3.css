@@ -1,0 +1,51 @@
+ol div{
+/* 	border:1px solid white; */
+	padding:5px;
+}	
+
+ol {
+	list-style: none;/*remove default style*/
+	counter-reset: my-counter;/*reset counter for list*/
+}
+ol li {
+	/*create incementing counter for list called my-counter*/
+	counter-increment: my-counter;
+}
+/*style list bullets*/
+ol li::before {
+	content: counter(my-counter) ". ";
+	color: gold;
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+/*define flex container*/
+li{
+	display:flex;
+	text-align: center;
+	margin:10px; 
+/* 	align-items:center; */
+}
+
+.b1{
+	flex:1;
+}
+
+/*have box 2 to be wider*/
+.b2{
+	flex:2;
+	text-align:left;
+	align-self: center;
+}
+
+.b1 a{
+	vertical-align: top;
+	font-size: 70%;
+	color: white;
+}
+
+img{
+	width:350px;
+	height:480px;
+}
